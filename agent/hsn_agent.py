@@ -1,7 +1,7 @@
 from agent import utils
 
 class HSNAgent:
-    def __init__(self, excel_path=r"C:\Users\subik\OneDrive\Document\PROJECT\hsn_agent_project\data\HSN_Master_Data.xlsx"):
+    def __init__(self, excel_path=r"data/HSN_Master_Data.xlsx"):
         self.df = utils.load_hsn_data(excel_path)
 
     def validate_hsn_code(self, code):
