@@ -1,7 +1,7 @@
 import pandas as pd
 from fuzzywuzzy import process
 
-def load_hsn_data(file_path=r"C:\Users\subik\OneDrive\Document\PROJECT\hsn_agent_project\data\HSN_Master_Data.xlsx"):
+def load_hsn_data(file_path='data/HSN_Master_Data.xlsx'):
     df = pd.read_excel(file_path, engine='openpyxl')
     df.columns = df.columns.str.strip().str.replace('\n', '', regex=True)
     print("📋 Cleaned Column Names:", df.columns.tolist()) 
